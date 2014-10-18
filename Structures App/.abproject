@@ -1,28 +1,17 @@
 {
   "ProjectName": "Structures App",
-<<<<<<< HEAD
   "ProjectGuid": "2bd8f80f-f849-4afb-b094-68b185ab7252",
-=======
-  "ProjectGuid": "77c050cc-94dc-4aa4-b3a3-672f0dc89343",
->>>>>>> 9f5ba4bead8cd2a7421ff33eb6bc62a4da412421
   "projectVersion": 1,
   "AppIdentifier": "com.telerik.StructuresApp",
   "DisplayName": "Structures App",
   "Author": "",
-<<<<<<< HEAD
   "Description": "Structures App",
-=======
-  "Description": "",
->>>>>>> 9f5ba4bead8cd2a7421ff33eb6bc62a4da412421
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
     "1",
-<<<<<<< HEAD
+
     "2"
-=======
-	"2"
->>>>>>> 9f5ba4bead8cd2a7421ff33eb6bc62a4da412421
   ],
   "iOSBackgroundMode": [],
   "WP8TileTitle": "",
