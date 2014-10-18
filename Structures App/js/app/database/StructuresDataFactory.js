@@ -3,7 +3,11 @@ app.factory('StructuresDataFactory', ['$http', function ($http) {
     var urlBase = 'http://api.everlive.com/v1/';
     var dataBase = 'Structures';
     var apiKey = 'Yw9zsNdqzNvaKTsv';
+    var el = new Everlive(apiKey);
+    var structures = el.data(dataBase);
+    var query = new Everlive.Query()
     var StructuresDataFactory = {};
+
 
     StructuresDataFactory.getStructures = function () {
         var fieldsConfig = {
@@ -25,7 +29,10 @@ app.factory('StructuresDataFactory', ['$http', function ($http) {
                 "X-Everlive-Expand": JSON.stringify(fieldsConfig)
             }
         };
+
         return $http.get(urlBase + apiKey + '/' + dataBase + '/', headersConfig);
+        //EVRLIVE method
+        //return structures.expand(fieldsConfig).get();
     };
 
     StructuresDataFactory.getStructure = function (id) {

@@ -5,13 +5,21 @@ app.factory('StructuresService', ['StructuresDataFactory', function (StructuresD
     var getAllStructures = function (callback) {
 
         var result = StructuresDataFactory.getStructures()
-            .success(function (structuresList) {
-                var formattedData = dataFormatter(structuresList);
-                callback(formattedData);
-            })
-            .error(function (error) {
-                return { "status": 'Unable to load structures data: ' + error.message };
-            });
+                    //EVRLIVE method
+            //.then(function (structuresList) {
+            //    var formattedData = dataFormatter(structuresList);
+            //    callback(formattedData);
+            //},
+            //    function (error) {
+            //        return { "status": 'Unable to load structures data: ' + error.message };
+            //});
+        .success(function (structuresList) {
+            var formattedData = dataFormatter(structuresList);
+            callback(formattedData);
+        })
+        .error(function (error) {
+            return { "status": 'Unable to load structures data: ' + error.message };
+        });
 
         return result;
     }
@@ -20,11 +28,18 @@ app.factory('StructuresService', ['StructuresDataFactory', function (StructuresD
     var dataFormatter = function (data) {
         var dataArray = [];
         var formattedData = [];
+
         if (data.Result instanceof Array) {
             dataArray = data.Result;
         } else {
             dataArray.push(data.Result);
         }
+        //EVRLIVE method
+        //if (data.result instanceof Array) {
+        //    dataArray = data.result;
+        //} else {
+        //    dataArray.push(data.result);
+        //}
 
         for (var i = 0; i < dataArray.length; i++) {
             var currentRecord = dataArray[i];
@@ -41,7 +56,6 @@ app.factory('StructuresService', ['StructuresDataFactory', function (StructuresD
 
         return formattedData;
     }
-
 
     return {
         all: function (callback) {
