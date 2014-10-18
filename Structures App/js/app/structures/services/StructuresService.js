@@ -24,6 +24,20 @@ app.factory('StructuresService', ['StructuresDataFactory', function (StructuresD
         return result;
     }
 
+    var createStructure = function (data) {
+        var result = StructuresDataFactory.insertStructure(data)
+            .success(function (result) {
+                alert(JSON.stringify(result));
+            })
+            .error(function (error) {
+                alert(JSON.stringify(error));
+            });
+        //EVRLIVE method
+        //var result = StructuresDataFactory.insertStructure(data);
+
+        return result;
+    }
+
     //binds data from backend services to the view data format
     var dataFormatter = function (data) {
         var dataArray = [];
@@ -60,6 +74,9 @@ app.factory('StructuresService', ['StructuresDataFactory', function (StructuresD
     return {
         all: function (callback) {
             return getAllStructures(callback);
+        },
+        create: function (data) {
+            return createStructure(data);
         }
     }
 

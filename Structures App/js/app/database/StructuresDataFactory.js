@@ -58,14 +58,23 @@ app.factory('StructuresDataFactory', ['$http', function ($http) {
         return $http.get(urlBase + apiKey + '/' + dataBase + '/' + id, headersConfig);
     };
 
-    //TODO fix
     StructuresDataFactory.insertStructure = function (structure) {
-        return $http.post(urlBase + apiKey + '/' + dataBase + '/' + id, structure);
+        //EVRLIVE method
+        //var result = structures.create(structure,
+        //    function (data) {
+        //        alert(JSON.stringify(data);
+        //    },
+        //    function (error) {
+        //        alert(JSON.stringify(error);
+        //    });
+
+        //return result;
+       return $http.post(urlBase + apiKey + '/' + dataBase + '/', structure);
     };
 
     //TODO fix
-    StructuresDataFactory.updateStructure = function (id) {
-        return $http.put(urlBase + apiKey + '/' + dataBase + '/' + id, id)
+    StructuresDataFactory.updateStructure = function (id, structure) {
+        return $http.put(urlBase + apiKey + '/' + dataBase + '/' + id, structure)
     };
 
     //TODO fix
