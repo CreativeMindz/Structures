@@ -1,0 +1,33 @@
+<ion-view title="Timeline" animation="slide-left-right">
+    <ion-content header-shrink class="padding views-content">
+        <ion-list>
+            <div class="tl-task tl-task-{{task.status}}" ng-repeat="task in upcomingTasks track by $index">
+                <div class="tl-timeline-left-container">
+                    <div class="tl-circle tl-category-{{task.categoryName}}"></div>
+                    <div class="tl-line tl-task-{{task.status}}"></div>
+                </div>
+                <div class="card timeline-card tl-right-container tl-task-{{task.status}}" ng-class="{true: 'completed-card', false: 'not-completed-card'}[isCompleted(task)]" type="item item-text-wrap">
+                    <div class="tl-task-tail-border tl-task-tail-border-{{task.status}}"></div>
+                    <div class="tl-task-tail-fill"></div>
+                    <div class="tl-time">
+                        <div class="tl-time-time">
+                            <div class="tl-time-hour">{{task.date.getHours()}} : {{task.date.getMinutes()}}</div>
+                            <div class="tl-time-date">{{task.date.getDate()}} {{task.date.getMonth()}} {{task.date.getFullYear()}}</div>
+                        </div>
+                        <div class="tl-time-delimeter"></div>
+                        <div class="tl-time-duration">
+                            <i class="icon ion-android-stopwatch"></i>
+                            {{task.duration}}
+                        </div>
+                    </div>
+                    <div class="tl-content">
+                        {{task.content}}
+                    </div>
+                    <div class="tl-part-of">
+                        {{task.goal}} | {{task.structure}}
+                    </div>
+                </div>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

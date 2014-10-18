@@ -1,0 +1,17 @@
+<ion-view title="Structures">
+    <ion-content header-shrink class="padding views-content">
+        <ion-list class="structures-list">
+            <div class="structure-item" ng-repeat="struct in structures">
+                <div class="{{struct.category}}-panel">
+                    <div class="card structure-card tl-right-container panel {{struct.category}}-struct" type="item item-text-wrap">
+                        <div class="structure-goal">Goal : {{struct.goal}}</div>
+                        <div class="{{struct.category}}-icon struct-icon"></div>
+                        <p class="struct-title" ng-bind="struct.title"></p>
+                        <div class="structure-bottom-container"><div class="sbc-task-text">Tasks:<p class="sbc-task-count">{{struct.count}}</p></div></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

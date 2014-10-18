@@ -1,0 +1,409 @@
+@font-face {
+    font-family: OpenSansSemibold;
+    src: url('../fonts/OpenSans-Semibold.ttf');
+}
+
+/** Navbar items */
+.app-logo {
+    background: url('../img/Icons/app-logo.png') 0 0 no-repeat;
+    width: 30%;
+    height: 100%;
+    margin-left: 3%;
+    background-size: 51%;
+
+
+}
+
+.nav-bar h1 {
+    font-family: OpenSansSemibold;
+    color: #F2F7E4 !important;
+}
+
+.nav-bar button {
+    color: #F2F7E4 !important;
+}
+
+.side-nav-items {
+    background-color: #6595ae !important;
+    padding: 5%;
+}
+
+.side-nav-search {
+    border: none !important;
+    margin: 0px;
+    padding: 5%;
+    background-color: transparent;
+}
+
+.main-content-ion-view {
+    box-shadow: 2px 2px 10px;
+}
+
+/** Tab items*/
+.tab-item-active {
+    color: #F2F7E4;
+}
+
+/** Intro View*/
+.intro-slide-wrapper {
+    margin: 20px;
+}
+
+    .intro-slide-wrapper button {
+        border-color: #7C5E50 !important;
+        background-color: #CA957c !important;
+    }
+
+.intro-slide-body {
+    background-color: #E7B59E;
+    border-color: #7C5E50;
+    text-align: center;
+    padding: 5px;
+    height: 75%;
+}
+
+/** Main View */
+.main-view {
+    background-color: #649dbb !important; /* old color : #ca957c */
+}
+
+.tabs {
+    background-color: #649dbb !important;
+}
+
+.views-content {
+    background-color: #f9f9e6;
+}
+
+/** Time line Classes */
+.tl-task {
+    display: inline-block;
+    width: 100%;
+    height: 9em;
+    margin-bottom: 1%;
+    margin-top: 4%;
+}
+
+    .tl-task.tl-task-completed {
+        color: #5da59d;
+        opacity: 0.8;
+    }
+
+    .tl-task.tl-task-missed {
+        color: #ca957c;
+        opacity: 0.8;
+    }
+
+    .tl-task.tl-task-pending {
+        color: #ADAD85;
+    }
+
+
+.tl-timeline-left-container {
+    float: left;
+    width: 15%;
+    height: 100%;
+}
+
+    .tl-timeline-left-container .tl-circle {
+        width: 2em;
+        height: 2em;
+        background-size: 2.1em;
+    }
+
+.tl-category-education {
+    background: url('../img/Icons/education-icon.png') 0 0 no-repeat;
+    background-size: 2.1em;
+}
+
+.tl-category-fitness {
+    background: url('../img/Icons/fitness-icon.png') 0 0 no-repeat;
+    background-size: 2.1em;
+}
+
+.tl-category-profession {
+    background: url('../img/Icons/profession-icon.png') 0 0 no-repeat;
+    background-size: 2.1em;
+}
+
+.tl-category-self-development {
+    background: url('../img/Icons/personal-icon.png') 0 0 no-repeat;
+    background-size: 2.1em;
+}
+
+.tl-timeline-left-container .tl-line {
+    float: left;
+    width: 5%;
+    height: 90%;
+    border-left: 0.2em inset;
+    border-color: rgba(0, 128, 0, 0.67);
+    margin-left: 30%;
+}
+
+.tl-line.tl-task-completed {
+    border-color: #5da59d;
+}
+
+.tl-line.tl-task-missed {
+    border-color: #ca957c;
+}
+
+.tl-line.tl-task-pending {
+    border-color: #c4c4c4;
+}
+
+.tl-right-container {
+    width: 80%;
+    height: 100%;
+    background-color: #f9f9e6;
+    float: left;
+    font-family: OpenSansSemibold;
+    border-bottom-width: 0.5em;
+}
+
+    .tl-right-container.tl-task-completed {
+        border: 0.1em solid #5da59d;
+        opacity: 0.8;
+    }
+
+    .tl-right-container.tl-task-missed {
+        border: 0.1em solid #ca957c;
+        opacity: 0.8;
+    }
+
+    .tl-right-container.tl-task-pending {
+        border: 0.1em solid #ADAD85;
+    }
+
+.tl-task-tail-border {
+    width: 0px;
+    height: 0px;
+    border: 10px solid;
+    margin-top: 0.2em;
+    border-color: transparent #73a7f0 transparent transparent;
+    position: absolute;
+    left: 8.5%;
+}
+
+    .tl-task-tail-border.tl-task-tail-border-completed {
+        border-color: transparent #5da59d transparent transparent;
+        opacity: 0.8;
+    }
+
+    .tl-task-tail-border.tl-task-tail-border-missed {
+        border-color: transparent #C5645E transparent transparent;
+        opacity: 0.8;
+    }
+
+    .tl-task-tail-border.tl-task-tail-border-pending {
+        border-color: transparent #ADAD85 transparent transparent;
+    }
+
+.tl-task-tail-fill {
+    width: 0px;
+    height: 0px;
+    border: 10px solid;
+    margin-top: 0.2em;
+    border-color: transparent #f9f9e6 transparent transparent;
+    position: absolute;
+    left: 9%;
+}
+
+.tl-content {
+    height: 58%;
+    padding: 2%;
+    text-overflow: ellipsis;
+    font-size: smaller;
+    font-size-adjust: 0.2;
+    overflow: hidden;
+}
+
+.tl-time {
+    height: 25%;
+    margin-top: 2%;
+    display: flex;
+}
+
+.tl-part-of {
+    height: 15%;
+    font-size: smaller;
+    text-align: center;
+    border-color: inherit;
+}
+
+.tl-time-time {
+    width: 40%;
+    margin-left: 5%;
+    display: block;
+    text-align: center;
+}
+
+.tl-time-hour {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.tl-time-delimeter {
+    height: 80%;
+    border-left: 0.1em inset;
+    border-color: #ADAD85;
+}
+
+.tl-time-date {
+    color: #6f8c96;
+    font-weight: bold;
+    font-size: 0.7em;
+    margin-top: -0.5em;
+}
+
+.tl-time-duration {
+    width: 45%;
+    font-size: 1.5em;
+    margin-right: 5%;
+    text-align: center;
+}
+
+    .tl-time-duration .text {
+        color: #ca957c;
+    }
+
+    .tl-time-duration .icon {
+    }
+/** Card layout */
+.not-completed-card {
+    border: 0.1em solid #C5645E;
+    border-bottom-width: 0.5em;
+}
+
+/* Structures layout */
+
+.structures-list .structure-card {
+    height: 30%;
+}
+
+.structures-list .panel {
+    color: #f9f9e6;
+    margin-bottom: 0.5em;
+    width: 100%;
+}
+
+.structures-list .fitness-struct {
+    background: transparent url('../img/structures/fitness-background.png') 0 0 no-repeat;
+}
+
+
+.structures-list .personal-struct {
+    background: transparent url('../img/structures/personal-background.png') 0 0 no-repeat;
+}
+
+
+.structures-list .education-struct {
+    background: transparent url('../img/structures/education-background.png') 0 0 no-repeat;
+}
+
+
+.structures-list .profession-struct {
+    background: transparent url('../img/structures/profession-background.png') 0 0 no-repeat;
+}
+
+/* icons layout */
+/*sbc means structures bottom container*/
+.sbc-task-text {
+    display: flex;
+    font-size: 80%;
+    margin-left: 80%;
+    position: absolute;
+    color: #649dbb;
+}
+
+.sbc-task-count {
+    color: #d78e5e;
+}
+
+.structure-goal {
+    margin: 3% 0 0 3%;
+    font-size: 0.8em;
+}
+
+.structures-list .struct-icon {
+    width: 20%;
+    height: 44%;
+    margin: 3% 0 0 8%;
+    float: left;
+    background-size: 5rem;
+}
+
+.structures-list .struct-title {
+    font-size: 1em;
+    margin-top: 9%;
+    float: left;
+    /* text-shadow: 0.03em 0.03em 0.03em #e9e9d7; */
+}
+
+.structure-bottom-container {
+    background-color: #f0f0de;
+    background-color: #f0f0de;
+    height: 18%;
+    top: 4.6em;
+    position: relative;
+}
+
+
+.struct-icon:after {
+    clear: both;
+    height: 0;
+    content: '';
+}
+
+.structures-list .structures-count-box {
+    width: 100px;
+    /*clear: both;*/
+    margin: 0;
+    height: 30px;
+}
+
+.structures-list .fitness-icon {
+    background: transparent url('../img/icons/fitness-icon.png') 0 0 no-repeat;
+    background-size: 3.5em;
+}
+
+.structures-list .personal-icon {
+    background: transparent url('../img/icons/personal-icon.png') 0 0 no-repeat;
+    background-size: 3.5em;
+}
+
+.structures-list .education-icon {
+    background: transparent url('../img/icons/education-icon.png') 0 0 no-repeat;
+    background-size: 3.5em;
+}
+
+.structures-list .profession-icon {
+    background: transparent url('../img/icons/profession-icon.png') 0 0 no-repeat;
+    background-size: 3.5em;
+}
+
+
+/* Structures layout end */
+
+/* Tasks layout */
+
+.task {
+    display: inline-block;
+    width: 100%;
+    height: 9em;
+    margin-bottom: 1%;
+    margin-top: 4%;
+}
+
+.task-completed {
+}
+
+.task-missed {
+}
+
+.task-pending {
+}
+
+
+
+/* Tasks layout */

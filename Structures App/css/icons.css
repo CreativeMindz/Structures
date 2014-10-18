@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../img/Icons/icomoon.eot?sj92ay');
+	src:url('../img/Icons/icomoon.eot?#iefixsj92ay') format('embedded-opentype'),
+		url('../img/Icons/icomoon.woff?sj92ay') format('woff'),
+		url('../img/Icons/icomoon.ttf?sj92ay') format('truetype'),
+		url('../img/Icons/icomoon.svg?sj92ay#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-goals-tab:before {
+	content: "\e600";
+    font-weight:bold;
+}
+.icon-structures-tab:before {
+	content: "\e601";
+}
+.icon-tasks-tab:before {
+	content: "\e602";
+}
+.icon-timeline-tab:before {
+	content: "\e603";
+}
+
+
+
+/*.timeline-tab-icon.tab-item-active {
+    background-color:rgba(0, 128, 0, 0.67);
+
+}
+
+.timeline-tab-icon {
+    background: url("../img/icons/timeline_tab_icon.png") 5% 2% no-repeat;
+    background-size: 3.7em;
+}*/

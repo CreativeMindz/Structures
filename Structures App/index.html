@@ -1,3 +1,70 @@
+<<<<<<< HEAD
+﻿﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- everlive/everlive js -->
+    <script src="lib/everlive/everlive.all.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app/app.js"></script>
+    <!-- Intro Module -->
+    <script src="js/app/main/controllers/IntroController.js"></script>
+    <script src="js/app/main/controllers/MainController.js"></script>
+    <!-- Timeline Module Includes -->
+    <script src="js/app/timeline/controllers/TimelineController.js"></script>
+    <script src="js/app/timeline/services/TimelineService.js"></script>
+    <!-- Structures Module Includes -->
+    <script src="js/app/database/StructuresDataFactory.js"></script>
+    <script src="js/app/structures/services/StructuresService.js"></script>
+    <script src="js/app/structures/controllers/StructuresController.js"></script>
+    <script src="js/app/structures/controllers/EditStructureController.js"></script>
+    <!-- Tasks Module Includes -->
+    <script src="js/app/database/TaskDataFactory.js"></script>
+    <script src="js/app/tasks/controllers/TasksController.js"></script>
+    <script src="js/app/tasks/services/TasksService.js"></script>
+
+    <!-- Custom Directives -->
+    <script src="js/app/structures/directives/structureForm.js"></script>
+    <!-- End of Custom Directives -->
+
+    <!-- Bower Dependencies -->
+    <script src="js/lib/angular-elastic/elastic.js"></script>
+    
+    <!-- End of Bower Dependencies -->
+
+</head>
+<body ng-app="structuresApp" ng-controller="MainController">
+    <!-- animation="slide-left-right-ios7"
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar ng-show="isIntroCompleted()" class="bar-stable nav-title-slide-android main-view">
+        <div class="app-logo"></div>
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view class="main-view"></ion-nav-view>
+</body>
+</html>
+=======
 <!DOCTYPE html>
 <!--
     Licensed to the Apache Software Foundation (ASF) under one
@@ -40,3 +107,4 @@
         </script>
     </body>
 </html>
+>>>>>>> 9f5ba4bead8cd2a7421ff33eb6bc62a4da412421

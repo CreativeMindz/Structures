@@ -1,0 +1,43 @@
+<!--
+  Create tabs with an icon and label, using the tabs-positive style.
+  Each tab's child <ion-nav-view> directive will have its own
+  navigation history that also transitions its views in and out.
+-->
+<ion-side-menus class="main-view">
+    <ion-side-menu-content class="main-content-ion-view">
+
+        <ion-tabs class="tabs-icon-only">
+            <ion-nav-buttons side="right">
+                <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+            </ion-nav-buttons>
+            <!-- Timeline Tab -->
+            <ion-tab title="Timeline" icon="icon-timeline-tab" href="#/main/timeline">
+                <ion-nav-view name="tab-timeline"></ion-nav-view>
+            </ion-tab>
+            <!-- Account Tab -->
+            <ion-tab title="Structures" icon="icon-structures-tab" href="#/main/structures">
+                <ion-nav-view name="tab-structures"></ion-nav-view>
+            </ion-tab>
+
+            <ion-tab title="Tasks" icon="icon-tasks-tab" href="#/main/tasks">
+                <ion-nav-view name="tab-tasks"></ion-nav-view>
+            </ion-tab>
+
+        </ion-tabs>
+    </ion-side-menu-content>
+    <ion-side-menu expose-aside-when="large" side="right">
+        <ion-header-bar class="bar-royal">
+            <h1 class="title">Left Menu</h1>
+        </ion-header-bar>
+        <ion-content class="side-nav-items">
+            <div class="list">
+                <button class="item button button-block">
+                    Add Structure
+                </button> 
+                <button class="item button button-block">
+                    Add Task
+                </button>
+            </div>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
