@@ -22,11 +22,6 @@ app.controller('IntroController', ['$scope', '$state', '$ionicSlideBoxDelegate',
             console.log('skip intro');
             startApp();
         }
-        else {
-            setTimeout(function () {
-                navigator.splashscreen.hide();
-            }, 750);
-        }
 
         $scope.startApplication = function () {
             startApp();
