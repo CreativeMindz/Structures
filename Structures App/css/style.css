@@ -389,13 +389,63 @@
 .task {
     display: inline-block;
     width: 100%;
-    height: 9em;
-    margin-bottom: 1%;
+    height: 30%;
+    margin-bottom: 5%;
     margin-top: 4%;
 }
 
-.task-completed {
+.task-bottom-container {
+    height: 25%;
 }
+
+    .task-bottom-container.task-bottom-container-fitness {
+        background: transparent url('../img/structures/fitness-background.png') 0 0 no-repeat;
+    }
+
+        .task-bottom-container.task-bottom-container-fitness .task-bc-fitness-icon {
+            background: transparent url('../img/Icons/fitness-icon.png') 0 0 no-repeat;
+            background-size: 100%;
+            width: 9%;
+            height: 92%;
+            margin-left: 2%;
+        }
+
+    .task-bottom-container.task-bottom-container-profession {
+        background: transparent url('../img/structures/profession-background.png') 0 0 no-repeat;
+    }
+
+        .task-bottom-container.task-bottom-container-profession .task-bc-profession-icon {
+            background: transparent url('../img/Icons/profession-icon.png') 0 0 no-repeat;
+            background-size: 100%;
+            width: 9%;
+            height: 92%;
+            margin-left: 2%;
+        }
+
+    .task-bottom-container.task-bottom-container-self-development {
+        background: transparent url('../img/structures/personal-background.png') 0 0 no-repeat;
+    }
+
+        .task-bottom-container.task-bottom-container-self-development .task-bc-self-development-icon {
+            background: transparent url('../img/Icons/personal-icon.png') 0 0 no-repeat;
+            background-size: 100%;
+            width: 9%;
+            height: 92%;
+            margin-left: 2%;
+        }
+
+    .task-bottom-container.task-bottom-container-education {
+        background: transparent url('../img/structures/education-background.png') 0 0 no-repeat;
+    }
+
+        .task-bottom-container.task-bottom-container-education .task-bc-education-icon {
+            background: transparent url('../img/Icons/education-icon.png') 0 0 no-repeat;
+            background-size: 100%;
+            width: 9%;
+            height: 92%;
+            margin-left: 2%;
+        }
+
 
 .task-missed {
 }

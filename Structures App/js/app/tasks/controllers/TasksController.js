@@ -1,7 +1,6 @@
 'use strict';
 
-app.controller('TasksController', ['$scope', 'TasksService',
-    function ($scope, TasksService) {
-        $scope.tasks = TasksService.all();
-
+app.controller('TasksController', ['$scope', 'TimelineService',
+    function ($scope, TimelineService) {
+        $scope.tasks = TimelineService.all();
     }]);

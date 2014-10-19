@@ -68,7 +68,7 @@ app.factory('TimelineService', ['TasksDataFactory', function (TasksDataFactory) 
         date: '10/09/2014 14:00',
         duration: '00:30',
         content: 'Train or just relax on fresh air',
-        goal: 'Structures',
+        goal: 'Get healthy and fit',
         status: 'pending',
         categoryName: 'fitness',
         structure: 'Coding',
@@ -78,7 +78,7 @@ app.factory('TimelineService', ['TasksDataFactory', function (TasksDataFactory) 
         date: '10/09/2014 06:30',
         duration: '00:30',
         content: 'Wake up early',
-        goal: 'Structures',
+        goal: 'Finish Reading the book list',
         categoryName: 'self-development',
         status: 'pending',
         structure: 'Coding',
@@ -89,7 +89,7 @@ app.factory('TimelineService', ['TasksDataFactory', function (TasksDataFactory) 
         duration: '00:30',
         content: 'Relax with friends',
         categoryName: 'self-development',
-        goal: 'Structures',
+        goal: 'Finish Reading the book list',
         structure: 'Coding',
         repeatType: repeatType.weekly
     }];

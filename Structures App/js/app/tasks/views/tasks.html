@@ -3,7 +3,23 @@
         <ion-list>
             <div class="task task-{{task.status}}" ng-repeat="task in tasks">
                 <div class="card task-card task-{{task.status}}" type="item item-text-wrap">
-                    
+                    <div class="tl-time">
+                        <div class="tl-time-time">
+                            <div class="tl-time-hour">{{task.date.getHours()}} : {{task.date.getMinutes()}}</div>
+                            <div class="tl-time-date">{{task.date.getDate()}} {{task.date.getMonth()}} {{task.date.getFullYear()}}</div>
+                        </div>
+                        <div class="tl-time-delimeter"></div>
+                        <div class="tl-time-duration">
+                            <i class="icon ion-android-stopwatch"></i>
+                            {{task.duration}}
+                        </div>
+                    </div>
+                    <div class="tl-content">
+                        {{task.content}}
+                    </div>
+                    <div class="task-bottom-container task-bottom-container-{{task.categoryName}}">
+                        <div class="task-bc-{{task.categoryName}}-icon"></div>{{task.goal}} | {{task.structure}}
+                    </div>
                 </div>
             </div>
         </ion-list>
