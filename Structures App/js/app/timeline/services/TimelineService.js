@@ -94,13 +94,31 @@ app.factory('TimelineService', ['TasksDataFactory', function (TasksDataFactory) 
         repeatType: repeatType.weekly
     }];
 
-    //function getActiveAndReccuringTasks (allTasks) {
-    //    var filteredTasks = allTasks.filter(function (task) {
-    //
-    //        // return all tasks that are active and repeating
-    //
-    //    });
-    //}
+    var history = [{
+        id: 5,
+        date: '10/11/2014 20:30',
+        status: statusType.completed
+    }, {
+        id: 1,
+        date: '10/11/2014 20:30',
+        status: statusType.completed
+    }, {
+        id: 2,
+        date: '10/11/2014 20:30',
+        status: statusType.missed
+    }, {
+        id: 5,
+        date: '10/11/2014 20:30',
+        status: statusType.completed
+    }, {
+        id: 3,
+        date: '10/11/2014 20:30',
+        status: statusType.missed
+    }, {
+        id: 4,
+        date: '10/11/2014 20:30',
+        status: statusType.completed
+    }];
 
     //binds data from backend services to the view data format
     var dataFormatter = function (data) {
@@ -165,6 +183,12 @@ app.factory('TimelineService', ['TasksDataFactory', function (TasksDataFactory) 
         return upcomingTasks;
     };
 
+    var getHistory = function () {
+        var buildedHistory = [];
+
+        return buildedHistory;
+    };
+
     return {
         all: function () {
             return tasks;
@@ -176,6 +200,7 @@ app.factory('TimelineService', ['TasksDataFactory', function (TasksDataFactory) 
             return getTaskById(taskId, callback);
         },
         getUpcoming: getUpcoming,
+        getHistory: getHistory,
         get: function (taskId) {
             return tasks[taskId];
         }
