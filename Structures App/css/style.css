@@ -413,6 +413,7 @@
     height: 30%;
     margin-bottom: 5%;
     margin-top: 4%;
+    color:#669999;
 }
 
 .task-bottom-container {
@@ -466,14 +467,4 @@
             height: 92%;
             margin-left: 2%;
         }
-
-
-.task-missed {
-}
-
-.task-pending {
-}
-
-
-
 /* Tasks layout */
