@@ -3,6 +3,11 @@
     src: url('../fonts/OpenSans-Semibold.ttf');
 }
 
+@font-face {
+    font-family: Lobster;
+    src: url('../fonts/Lobster-1.4.otf');
+}
+
 /** Navbar items */
 .app-logo {
     background: url('../img/Icons/app-logo.png') 0 0 no-repeat;
@@ -44,21 +49,36 @@
 }
 
 /** Intro View*/
+.intro-slide {
+    background: url('../img/introscreen/ThirdSlide.png') 0 0 no-repeat;
+    text-align: center;
+}
+
 .intro-slide-wrapper {
     margin: 20px;
 }
 
-    .intro-slide-wrapper button {
-        border-color: #7C5E50 !important;
-        background-color: #CA957c !important;
+    .intro-slide-wrapper h3 {
+        color: #fff !important;
+        font-family: 'Lobster' !important;
     }
 
-.intro-slide-body {
-    background-color: #E7B59E;
-    border-color: #7C5E50;
-    text-align: center;
-    padding: 5px;
-    height: 75%;
+.centered-logo {
+    margin: 0 auto;
+    margin-top: 50%;
+    background: url();
+    width: 32%;
+    height: 20%;
+    background: url('../img/introscreen/Layer-32.png') 0 0 no-repeat;
+    background-size: contain;
+}
+
+.infographic {
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
+    /*background: url('../img/introscreen/Layer-31.png') 0 0 no-repeat;*/
+    background-size: contain;
 }
 
 /** Main View */
