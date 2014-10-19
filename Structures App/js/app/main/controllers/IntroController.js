@@ -53,13 +53,7 @@ app.controller('IntroController', ['$scope', '$state', '$ionicSlideBoxDelegate',
         // called each time the slide changes
         $scope.slideChanged = function (index) {
             if (index === 2) {
-                $scope.skipButton = [{
-                    content: 'Continue',
-                    type: 'button-positive button-clear',
-                    tap: function (e) {
-                        startApp();
-                    }
-                }];
+                startApp();
             }
         };
 
